@@ -1,0 +1,90 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+.calculator {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+#display {
+    width: 100%;
+    height: 50px;
+    margin-bottom: 10px;
+    text-align: right;
+    font-size: 1.5em;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    background-color: #e0e0e0;
+    color: #333;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+button {
+    padding: 20px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+button.operator {
+    background-color: #f78da7;
+    color: white;
+}
+
+button.operator:hover {
+    background-color: #f06292;
+}
+
+button.equal {
+    background-color: #4caf50;
+    color: white;
+    grid-column: span 4;
+}
+
+button.equal:hover {
+    background-color: #388e3c;
+}
+
+button.scientific {
+    background-color: #ffb74d;
+    color: white;
+}
+
+button.scientific:hover {
+    background-color: #ffa726;
+}
+
+button:not(.operator):not(.equal):not(.scientific) {
+    background-color: #64b5f6;
+    color: white;
+}
+
+button:not(.operator):not(.equal):not(.scientific):hover {
+    background-color: #42a5f5;
+}
