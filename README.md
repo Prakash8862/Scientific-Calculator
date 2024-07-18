@@ -4,8 +4,14 @@ This project is a colorful scientific calculator implemented using HTML, CSS, an
 
 
 Basic arithmetic operations: addition, subtraction, multiplication, and division.
+
+
 Scientific functions: square root, exponentiation, sine, cosine, and tangent.
+
+
 Responsive and user-friendly interface.
+
+
 Colorful buttons with hover and active effects for better interaction.
 
 **File Structure**
@@ -13,5 +19,9 @@ Colorful buttons with hover and active effects for better interaction.
 
 
 index.html: The main HTML file containing the structure of the calculator.
+
+
 styles.css: The CSS file for styling the calculator.
+
+
 script.js: The JavaScript file containing the logic for calculator operations.
